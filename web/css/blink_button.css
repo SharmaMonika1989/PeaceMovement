@@ -1,0 +1,50 @@
+.both-button{
+	padding-top:12px;
+	width:600px;
+	text-align:center;
+	display:block;
+;
+}
+
+.button {
+  background-color: #004A7F;
+  -webkit-border-radius: 10px;
+  cursor: pointer;
+  margin:5px;
+  display:inline-block;
+  padding: 5px 5px;
+  float:left;
+  width:280px;
+  
+  text-decoration: none;
+}
+@-webkit-keyframes glowing {
+    0% { background-color: #00AECE; box-shadow: 0 0 2px red; }
+  50% { background-color: #da800e; box-shadow: 0 0 10px red; }
+  100% { background-color: yellow; box-shadow: 0 0 2px red; }
+}
+
+@-moz-keyframes glowing {
+    0% { background-color: #00AECE; box-shadow: 0 0 2px red; }
+  50% { background-color: #da800e; box-shadow: 0 0 10px red; }
+  100% { background-color: yellow; box-shadow: 0 0 2px red; }
+}
+
+@-o-keyframes glowing {
+  0% { background-color: #00AECE; box-shadow: 0 0 2px red; }
+  50% { background-color: #da800e; box-shadow: 0 0 10px red; }
+  100% { background-color: yellow; box-shadow: 0 0 2px red; }
+}
+
+@keyframes glowing {
+  0% { background-color: #00AECE; box-shadow: 0 0 2px red; }
+  50% { background-color: #da800e; box-shadow: 0 0 10px red; }
+  100% { background-color: yellow; box-shadow: 0 0 2px red; }
+}
+
+.button {
+  -webkit-animation: glowing 1500ms infinite;
+  -moz-animation: glowing 1500ms infinite;
+  -o-animation: glowing 1500ms infinite;
+  animation: glowing 1500ms infinite;
+}
